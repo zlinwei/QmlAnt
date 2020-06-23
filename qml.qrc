@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HomeForm.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>ant/Button.qml</file>
+        <file>ant/Style.qml</file>
+        <file>ant/qmldir</file>
+        <file>Home.qml</file>
+    </qresource>
+</RCC>
