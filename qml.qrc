@@ -7,5 +7,6 @@
         <file>ant/Style.qml</file>
         <file>ant/qmldir</file>
         <file>Home.qml</file>
+        <file>ant/ApplicationWindow.qml</file>
     </qresource>
 </RCC>

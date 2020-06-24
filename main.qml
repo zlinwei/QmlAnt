@@ -1,15 +1,23 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.5
+import QtQuick.Controls 2.12
+import QtQuick.Window 2.12
+import QtQuick.Layouts 1.0
 
-ApplicationWindow {
+import "./ant" as Ant
+
+Ant.ApplicationWindow {
     id: window
     visible: true
     width: 640
     height: 480
     title: qsTr("Stack")
 
+    flags: Qt.MaximizeUsingFullscreenGeometryHint;
+
+
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
+        topPadding: Screen.width < 768? Screen.height * 0.05: 0
 
         ToolButton {
             id: toolButton
@@ -28,6 +36,11 @@ ApplicationWindow {
             text: stackView.currentItem.title
             anchors.centerIn: parent
         }
+
+        Component.onCompleted: {
+            console.log(Screen.height)
+            console.log(window.height)
+        }
     }
 
     Drawer {
@@ -37,6 +50,7 @@ ApplicationWindow {
 
         Column {
             anchors.fill: parent
+            topPadding: Screen.width < 768? Screen.height * 0.05: 0
 
             ItemDelegate {
                 text: qsTr("Page 1")
@@ -49,8 +63,8 @@ ApplicationWindow {
                 text: qsTr("Page 2")
                 width: parent.width
                 onClicked: {
-//                    stackView.push("Page2Form.ui.qml")
-//                    drawer.close()
+                    //                    stackView.push("Page2Form.ui.qml")
+                    //                    drawer.close()
                     console.log("page 2")
                 }
             }
