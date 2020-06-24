@@ -67,4 +67,29 @@ Page {
             role: Ant.Style.errorDefault
         }
     }
+
+    ColumnLayout {
+        anchors.left: columnLayout.right
+        anchors.leftMargin: 10
+        anchors.top: parent.top
+        anchors.topMargin: 10
+
+        Ant.Button {
+            text: qsTr("Primary")
+            role: Ant.Style.primary
+            icon.source: "/ant/iconfont.cn/auto.svg"
+        }
+
+        Ant.Button {
+            text: qsTr("Success")
+            role: Ant.Style.success
+            icon.source: "/ant/iconfont.cn/conditions.svg"
+        }
+
+        Ant.Button {
+            text: qsTr("Warning")
+            role: Ant.Style.warning
+            icon.source: "/ant/iconfont.cn/pic.svg"
+        }
+    }
 }

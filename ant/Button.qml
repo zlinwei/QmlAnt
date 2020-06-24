@@ -72,15 +72,15 @@ T.Button {
     implicitHeight: Math.max(implicitBackgroundHeight + topInset + bottomInset,
                              implicitContentHeight + topPadding + bottomPadding)
 
-    padding: 6
+    padding: icon.source==""?6:2
     horizontalPadding: padding + 2
-    spacing: 6
+    spacing: icon.source==""?6:2
 
     icon.width: 24
     icon.height: 24
-    icon.color: control.checked || control.highlighted ? control.palette.brightText :
-                                                         control.flat && !control.down ? (control.visualFocus ? control.palette.highlight : control.palette.windowText) : control.palette.buttonText
-
+//    icon.color: control.checked || control.highlighted ? control.palette.brightText :
+//                                                         control.flat && !control.down ? (control.visualFocus ? control.palette.highlight : control.palette.windowText) : control.palette.buttonText
+    icon.color: control.hovered && !control.down ? role.textHoverColor: role.textColor
     contentItem: IconLabel {
         spacing: control.spacing
         mirrored: control.mirrored
@@ -109,6 +109,7 @@ T.Button {
 
     onClicked:{
         //TODO add animation
+
     }
 
 

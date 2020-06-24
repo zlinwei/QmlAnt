@@ -38,8 +38,10 @@ Ant.ApplicationWindow {
         }
 
         Component.onCompleted: {
-            console.log(Screen.height)
-            console.log(window.height)
+            console.log("os: " ,Qt.platform.os)
+            console.log("screen.width: " ,Screen.width)
+            console.log("window.width: " ,window.width)
+
         }
     }
 

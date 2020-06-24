@@ -8,5 +8,15 @@
         <file>ant/qmldir</file>
         <file>Home.qml</file>
         <file>ant/ApplicationWindow.qml</file>
+        <file>ant/iconfont.cn/all.svg</file>
+        <file>ant/iconfont.cn/auto.svg</file>
+        <file>ant/iconfont.cn/cart-Empty.svg</file>
+        <file>ant/iconfont.cn/code.svg</file>
+        <file>ant/iconfont.cn/conditions.svg</file>
+        <file>ant/iconfont.cn/double-arrow-left.svg</file>
+        <file>ant/iconfont.cn/gift.svg</file>
+        <file>ant/iconfont.cn/leftarrow.svg</file>
+        <file>ant/iconfont.cn/nav-list.svg</file>
+        <file>ant/iconfont.cn/pic.svg</file>
     </qresource>
 </RCC>
