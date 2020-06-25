@@ -19,6 +19,7 @@ Ant.ApplicationWindow {
         contentHeight: toolButton.implicitHeight
         topPadding: Screen.width < 768? Screen.height * 0.05: 0
 
+
         ToolButton {
             id: toolButton
             text: stackView.depth > 1 ? "\u25C0" : "\u2630"
@@ -55,21 +56,22 @@ Ant.ApplicationWindow {
             topPadding: Screen.width < 768? Screen.height * 0.05: 0
 
             ItemDelegate {
-                text: qsTr("Page 1")
+                text: qsTr("Demo Button")
                 width: parent.width
                 onClicked: {
-                    console.log("page 1")
+                    stackView.push("DemoButton.ui.qml")
+                    drawer.close();
                 }
             }
-            ItemDelegate {
-                text: qsTr("Page 2")
-                width: parent.width
-                onClicked: {
-                    //                    stackView.push("Page2Form.ui.qml")
-                    //                    drawer.close()
-                    console.log("page 2")
-                }
-            }
+//            ItemDelegate {
+//                text: qsTr("Page 2")
+//                width: parent.width
+//                onClicked: {
+//                    //                    stackView.push("Page2Form.ui.qml")
+//                    //                    drawer.close()
+//                    console.log("page 2")
+//                }
+//            }
         }
     }
 

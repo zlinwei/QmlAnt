@@ -18,5 +18,6 @@
         <file>ant/iconfont.cn/leftarrow.svg</file>
         <file>ant/iconfont.cn/nav-list.svg</file>
         <file>ant/iconfont.cn/pic.svg</file>
+        <file>DemoButton.ui.qml</file>
     </qresource>
 </RCC>
